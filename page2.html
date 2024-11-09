@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/flower.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meshi's Website</title>
+    <link href="/styles/main.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1>This is another page 😊</h1>
+    </header>
+    <main>
+      <button onclick="animation()">
+        Click me to change the square's class
+      </button>
+      <div id="box"></div>
+      <h3>
+        Some of my favorite digital products are Notion, ChatGPT, YouTube and
+        Google Maps -
+      </h3>
+      <div class="image-container" id="imageContainer">
+        <a href="https://www.notion.so" target="_blank">
+          <img src="/notion.jpg" alt="Image 1" />
+        </a>
+        <a href="https://chat.openai.com" target="_blank">
+          <img src="/chat.webp" alt="Image 2" />
+        </a>
+        <a href="https://www.youtube.com" target="_blank">
+          <img src="/youtube.png" alt="Image 3" />
+        </a>
+        <a href="https://www.google.com/maps" target="_blank">
+          <img src="/map.webp" alt="Image 4" />
+        </a>
+      </div>
+      <div class="container">
+        <div>Now you probably wonder, what is</div>
+        <select id="appDropdown" onchange="showExplanation()">
+          <option value="">Choose an app...</option>
+          <option value="notion">Notion</option>
+          <option value="google-maps">Google Maps</option>
+          <option value="youtube">YouTube</option>
+          <option value="chatgpt">ChatGPT</option>
+        </select>
+        <div>even?</div>
+      </div>
+      <div id="appExplanation" class="explanation"></div>
+      <h4><a href="/index.html">Go back</a> to the main page</h4>
+    </main>
+    <footer>
+      <p>© 2024 Meshi's Simple Website</p>
+    </footer>
+    <script src="/main.js"></script>
+  </body>
+</html>
